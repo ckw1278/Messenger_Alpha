@@ -1,0 +1,108 @@
+<LinearLayout
+    android:id="@+id/linearLayout_profile"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:padding="10dp"
+    tools:context="com.example.administrator.messenger.ProfileFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="40dp"
+            android:orientation="vertical">
+
+            <com.github.siyamed.shapeimageview.CircularImageView
+                android:id="@+id/imageView_profile_modify"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="40dp"
+                android:scaleType="fitXY"
+                app:siBorderAlpha="0.5"
+                app:siBorderColor="@color/colorPrimary"
+                app:siBorderWidth="3dp"/>
+
+            <com.rengwuxian.materialedittext.MaterialEditText
+                android:id="@+id/editText_nickName_modify"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="40dp"
+                android:layout_marginRight="40dp"
+                android:layout_marginTop="20dp"
+                android:enabled="false"
+                android:hint="닉네임"
+                android:textSize="20dp"
+                app:met_floatingLabel="highlight"
+                app:met_hideUnderline="false"/>
+
+            <com.rengwuxian.materialedittext.MaterialEditText
+                android:id="@+id/editText_message_modify"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="40dp"
+                android:layout_marginRight="40dp"
+                android:enabled="false"
+                android:hint="상태 메시지"
+                android:textSize="20dp"
+                app:met_floatingLabel="highlight"
+                app:met_hideUnderline="false"/>
+
+            <LinearLayout
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="40dp"
+                android:layout_marginRight="40dp"
+                android:orientation="horizontal">
+
+                <com.rengwuxian.materialedittext.MaterialEditText
+                    android:id="@+id/editText_profile_id"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:editable="false"
+                    android:hint="아이디 검색 허용"
+                    android:text="ddd"
+                    android:textSize="20dp"
+                    app:met_floatingLabel="highlight"
+                    app:met_hideUnderline="false"/>
+
+                <com.github.lguipeng.library.animcheckbox.AnimCheckBox
+                    android:id="@+id/checkbox_id_search_allow"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_gravity="center"
+                    android:layout_weight="0"
+                    android:padding="4dp"
+                    app:circle_color="#FF7ACCC4"
+                    app:stroke_color="#FFBADCD9"
+                    app:stroke_width="4dp"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+    <com.kyleduo.switchbutton.SwitchButton
+        android:id="@+id/switchButton_profile_modify"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_gravity="start|bottom"
+        android:layout_marginBottom="65dp"
+        app:kswOffColor="#FFD8EDEB"
+        app:kswOnColor="#FF7ACCC4"/>
+
+</LinearLayout>

@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Messenger</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_friend_info">FriendInfoActivity</string>
+    <string name="title_activity_friend_add">FriendAddActivity</string>
+    <string name="title_activity_talk_room">TalkRoomActivity</string>
+    <string name="title_activity_friend_search">FriendSearchActivity</string>
+</resources>

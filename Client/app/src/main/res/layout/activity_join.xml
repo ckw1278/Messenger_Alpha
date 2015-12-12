@@ -1,0 +1,143 @@
+<LinearLayout
+    android:id="@+id/linearLayout_join"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="40dp"
+    tools:context="com.example.user.mymessengerapp.JoinActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_weight="0.3">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="horizontal">
+
+            <com.rengwuxian.materialedittext.MaterialEditText
+                android:id="@+id/editText_joinId"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_weight="1"
+                android:hint="아이디"
+                android:inputType="textVisiblePassword"
+                android:textSize="20dp"
+                app:met_floatingLabel="normal"
+                app:met_helperText="아이디는 대문자 한글은 불가"
+                app:met_hideUnderline="false"/>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="공개"
+                    android:textColor="#FF116D65"/>
+
+                <com.github.lguipeng.library.animcheckbox.AnimCheckBox
+                    android:id="@+id/checkbox_id_search_allow_on_join"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_gravity="center"
+                    android:layout_weight="0"
+                    android:padding="4dp"
+                    app:circle_color="#FF7ACCC4"
+                    app:stroke_color="#FFBADCD9"
+                    app:stroke_width="4dp"/>
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <com.rengwuxian.materialedittext.MaterialEditText
+            android:id="@+id/editText_joinPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:hint="패스워드"
+            android:inputType="textVisiblePassword"
+            android:textSize="20dp"
+            app:met_floatingLabel="normal"
+            app:met_hideUnderline="false"/>
+
+        <com.rengwuxian.materialedittext.MaterialEditText
+            android:id="@+id/editText_joinNickname"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:hint="닉네임"
+            android:inputType="textVisiblePassword"
+            android:textSize="20dp"
+            app:met_floatingLabel="normal"
+            app:met_hideUnderline="false"/>
+
+        <com.rengwuxian.materialedittext.MaterialEditText
+            android:id="@+id/editText_joinNumber"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:enabled="false"
+            android:hint="번호"
+            android:inputType="textVisiblePassword"
+            android:textSize="20dp"
+            app:met_floatingLabel="normal"
+            app:met_hideUnderline="true"/>
+
+    </LinearLayout>
+
+    <com.github.siyamed.shapeimageview.CircularImageView
+        android:id="@+id/imageView_joinPhoto"
+        android:layout_width="130dp"
+        android:layout_height="130dp"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center"
+        android:scaleType="centerInside"
+        android:src="@drawable/ic_launcher"
+        app:siBorderAlpha="0.5"
+        app:siBorderColor="@color/colorPrimary"
+        app:siBorderWidth="3dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/button_joinOk"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginRight="20dp"
+            android:layout_weight="1"
+            android:background="#00000000"
+            android:gravity="left|center_vertical"
+            android:text="Ok"
+            android:textColor="@drawable/tab_text_selector"
+            android:textSize="20dp"/>
+
+        <Button
+            android:id="@+id/button_joinCancle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_weight="1"
+            android:background="#00000000"
+            android:gravity="center_vertical|right"
+            android:text="Cancle"
+            android:textColor="@drawable/tab_text_selector"
+            android:textSize="20dp"/>
+    </LinearLayout>
+
+</LinearLayout>
